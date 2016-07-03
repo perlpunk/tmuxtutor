@@ -1,0 +1,45 @@
+Working with windows
+
+You are in window 0 right now. To go to this window from
+anywhere, type
+
+    PREFIX + 0
+
+Let's open a a new window with
+
+    PREFIX + c
+
+You will be in that new window number 1 now and see an additional
+entry in the status bar at the bottom.
+
+You can interactively choose any window by typing
+
+    PREFIX + w
+
+This will give you a list of windows in your session.
+
+Windows with numbers 0-9 are a bit easier to access. Just
+type
+
+    PREFIX + n
+
+where n is the window number.
+
+You can also navigate to the last recently used window with
+
+    PREFIX + l
+
+Play around by opening/closing windows and navigating
+between them.
+
+You can give a title to a window with:
+
+    PREFIX + ,
+
+Go to the next
+
+    PREFIX + n
+
+or previous window
+
+    PREFIX + p

@@ -19,3 +19,35 @@ You can also type ESC
 To get a list of all keys that are bound to a command, type
 
     PREFIX + ?
+
+Every key is listed with the exact command it is bound to. All
+available commands are listed in the man page.
+
+To close this or other tutorials, just type
+
+    q
+
+which will end the `less` *and* close the window.
+
+tmux has sessions. A session can have several windows, and
+a window can have several panes.
+
+This tutorial is started as a session called "demo" which
+you should be able to see in the status bar at the bottom.
+
+You can detach a session by typing
+
+    PREFIX + d
+
+You will be back in the shell where you started the session.
+
+To reattach to this session, type
+
+    tmux attach -t demo
+
+If there is only one session, you can omit the -t option.
+
+    tmux ls
+    tmux list-sessions
+
+will list all your tmux sessions.
