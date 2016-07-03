@@ -1,0 +1,21 @@
+Welcome to tmuxtutor!
+
+For every command in tmux you have to type a PREFIX. By default, this
+is
+    CTRL-b
+
+Let's try our first command.
+
+To show the current time, type
+
+    PREFIX + t
+
+To get back from the time display (or from any dialogue), type
+
+    q
+
+You can also type ESC
+
+To get a list of all keys that are bound to a command, type
+
+    PREFIX + ?
