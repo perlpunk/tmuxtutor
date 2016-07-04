@@ -1,0 +1,70 @@
+Working with panes
+
+Windows are nice, but often you want to see several windows
+at the same time; for viewing log files, showing the output of
+your test suite, manage your git commits etc.
+
+For that, tmux has panes inside of windows.
+
+Splitting a window into two panes is easy. To split
+vertical, type
+
+    PREFIX + %
+
+To split horizontally, use
+
+    PREFIX + "
+
+So now create a new pane by PREFIX + %. The new pane is
+automatically focused.
+
+To navigate, you can use the arrow keys. So to go back to
+this pane, type
+
+    PREFIX + Left
+
+To quickly navigate between two panes, use
+
+    PREFIX + ;
+
+Remember: Last window: PREFIX + l
+          Last pane:   PREFIX + ;
+
+To go to the next pane, type
+
+    PREFIX + o
+
+Remember you can always type
+
+    PREFIX + ?
+
+to get a list of all keys.
+
+
+To see all pane numbers, type
+
+    PREFIX + q
+
+You will see a number displayed in every pane for two seconds.
+
+Two swap a pane with the previous/next one, type
+
+    PREFIX + {
+    PREFIX + }
+
+
+Now, let's say you have two vertical panes, so they have only half of
+the size of your terminal. This can sometimes be problematic.
+
+You'll notice that you cannot copy content from just one pane.
+When you cannot use the tmux copy & paste, you want to be able
+to select content like you do in your normal terminal.
+
+Or wou want to show a side-by-side diff with vimdiff and just
+need more space.
+
+There is a shortcut for temporarily zoom in/out a pane with
+
+    PREFIX + z
+
+Try it with this one here. To unzoom, just use the same key again.
