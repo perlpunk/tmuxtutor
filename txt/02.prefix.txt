@@ -1,4 +1,4 @@
-Changing the PREFIX key
+= Changing the PREFIX key
 
 You can change the default CTRL-b prefix to something else.
 Many people seem to use CTRL-a like in screen, many use CTRL-space.

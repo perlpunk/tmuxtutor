@@ -1,4 +1,4 @@
-Working with windows
+= Working with windows
 
 You are in window 0 right now. To go to this window from
 anywhere, type
@@ -11,6 +11,8 @@ Let's open a a new window with
 
 You will be in that new window number 1 now and see an additional
 entry in the status bar at the bottom.
+
+== Navigating windows
 
 You can interactively choose any window by typing
 
@@ -32,10 +34,6 @@ You can also navigate to the last recently used window with
 Play around by opening/closing windows and navigating
 between them.
 
-You can give a title to a window with:
-
-    PREFIX + ,
-
 Go to the next
 
     PREFIX + n
@@ -43,3 +41,11 @@ Go to the next
 or previous window
 
     PREFIX + p
+
+== Window titles
+
+You can give a title to a window with:
+
+    PREFIX + ,
+
+You can see the window titles in the status bar.

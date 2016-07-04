@@ -1,4 +1,4 @@
-Working with panes
+= Working with panes
 
 Windows are nice, but often you want to see several windows
 at the same time; for viewing log files, showing the output of
@@ -47,11 +47,14 @@ To see all pane numbers, type
 
 You will see a number displayed in every pane for two seconds.
 
+== Move panes around
+
 Two swap a pane with the previous/next one, type
 
     PREFIX + {
     PREFIX + }
 
+== Zooming panes
 
 Now, let's say you have two vertical panes, so they have only half of
 the size of your terminal. This can sometimes be problematic.

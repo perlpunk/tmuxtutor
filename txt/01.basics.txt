@@ -1,8 +1,12 @@
-Welcome to tmuxtutor!
+= Welcome to tmuxtutor!
+
+== Prefix key
 
 For every command in tmux you have to type a PREFIX. By default, this
 is
     CTRL-b
+
+== Basic commands
 
 Let's try our first command.
 
@@ -28,6 +32,8 @@ To close this or other tutorials, just type
     q
 
 which will end the `less` *and* close the window.
+
+== Sessions
 
 tmux has sessions. A session can have several windows, and
 a window can have several panes.

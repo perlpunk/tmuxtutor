@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-tmux new-session -s demo "less 03.windows.txt"
+tmux new-session -s demo "man man/03.windows.man"
