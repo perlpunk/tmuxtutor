@@ -1,0 +1,21 @@
+<h1>Changing the PREFIX key</h1>
+
+<p>You can change the default CTRL-b prefix to something else. Many people seem to use CTRL-a like in screen, many use CTRL-space.</p>
+
+<p>Keep in mind that if you want to use tmux for pair programming, you have to use the same prefix as the other persons.</p>
+
+<p>Here&#39;s how you change it from CTRL-b to CTRL-a:</p>
+
+<pre><code>  ~/.tmux.conf:
+  # Change the default prefix key
+  unbind-key C-b
+  set -g prefix C-a
+
+  # CTRL-a a will send a literal CTRL-a (to go to the
+  # start of the command line, for example)
+  bind-key a send-prefix
+
+  # or, alternatively:
+  # CTRL-a CTRL-a will send a literal CTRL-a
+  # bind-key C-a send-prefix
+</code></pre>
