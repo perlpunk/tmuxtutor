@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/print.css" media="print">
+
+    <title>intro | tmuxtutor</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1><a href="/tmuxtutor/">tmuxtutor</a> / intro</h1>
+        <h2>A brief tmux tutorial inspired by vimtutor</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/perlpunk/tmuxtutor/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/perlpunk/tmuxtutor/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/perlpunk/tmuxtutor" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+<h1 class="title">tmuxtutor.intro</h1>
+
+<p>Welcome to tmuxtutor!</p>
+
+<h2>Requirements</h2>
+
+<ul>
+<li>Install tmux</li>
+<li>You should know how to navigate in a man page/less command</li>
+<li>You should know what the Meta (or Alt) keys is</li>
+</ul>
+
+<h2>Usage</h2>
+
+<p>This tutorial is intended to be viewed interactively. The HTML version is available here: <a href="https://perlpunk.github.io/tmuxtutor/">https://perlpunk.github.io/tmuxtutor/</a></p>
+
+<p>Most of these tutorials are started with a command like this:</p>
+
+<pre><code>  tmux new-session -s demo &quot;man man/01.basics.man&quot;
+</code></pre>
+
+<p>So it will start a new tmux session called &quot;demo&quot; and the command man <code>man/01.basics.man</code>. This means if you leave the man command with <code>q</code> this will close the tmux window, and (if you haven&#39;t opened more windows) also the session.</p>
+
+<p>If you want to try out things in an extra session, simply start your own. It&#39;s a good habit to start every session with a name.</p>
+
+<pre><code>  tmux new-session -t play
+</code></pre>
+
+<h2>tmux configuration ~/.tmux.conf</h2>
+
+<p>This tutorial assumes you haven&#39;t created a tmux configuration yet. If you have, then some things might work and look differently then with the default setup.</p>
+
+      </section>
+    </div>
+
+  </body>
+</html>

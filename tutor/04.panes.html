@@ -28,23 +28,25 @@
 
     <div class="container">
       <section id="main_content">
-<h1>Working with panes</h1>
+<h1 class="title">tmuxtutor.panes</h1>
+
+<p>Working with panes</p>
 
 <p>Windows are nice, but often you want to see several windows at the same time; for viewing log files, showing the output of your test suite, manage your git commits etc.</p>
 
 <p>For that, tmux has panes inside of windows.</p>
 
-<p>Splitting a window into two panes is easy. To split vertical, type</p>
+<p>Splitting a window into two panes is easy. To split vertically, type</p>
 
 <pre><code>  PREFIX + %
 </code></pre>
 
 <p>To split horizontally, use</p>
 
-<pre><code>  PREFIX + &quot;
+<pre><code>  PREFIX + &quot; (double quote)
 </code></pre>
 
-<p>So now create a new pane by PREFIX + %. The new pane is automatically focused.</p>
+<p>So now create a new pane by <code>PREFIX + %</code>. The new pane is automatically focused.</p>
 
 <p>To navigate, you can use the arrow keys. So to go back to this pane, type</p>
 
@@ -56,9 +58,10 @@
 <pre><code>  PREFIX + ;
 </code></pre>
 
-<p>Remember: Last window: PREFIX + l</p>
+<p>Remember:</p>
 
-<pre><code>        Last pane:   PREFIX + ;
+<pre><code>  Last window: PREFIX + l
+  Last pane:   PREFIX + ;
 </code></pre>
 
 <p>To go to the next pane, type</p>
@@ -75,16 +78,16 @@
 
 <br/>
 
-<p>To see all pane numbers, type</p>
+<p>To see all pane numbers, and to navigate to a pane, type</p>
 
 <pre><code>  PREFIX + q
 </code></pre>
 
-<p>You will see a number displayed in every pane for two seconds.</p>
+<p>You will see a number displayed in every pane for two seconds. The active one is displayed in red. You can then type in the number to navigate to that pane.</p>
 
 <h2>Move panes around</h2>
 
-<p>Two swap a pane with the previous/next one, type</p>
+<p>To swap a pane with the previous/next one, type</p>
 
 <pre><code>  PREFIX + &#123;
   PREFIX + &#125;
@@ -96,14 +99,21 @@
 
 <p>You&#39;ll notice that you cannot copy content from just one pane. When you cannot use the tmux copy &amp; paste, you want to be able to select content like you do in your normal terminal.</p>
 
-<p>Or wou want to show a side-by-side diff with vimdiff and just need more space.</p>
+<p>Or wou want to show a side by side diff with vimdiff and just need more space.</p>
 
-<p>There is a shortcut for temporarily zoom in/out a pane with</p>
+<p>There is a shortcut for temporarily zooming into/out of a pane with</p>
 
 <pre><code>  PREFIX + z
 </code></pre>
 
 <p>Try it with this one here. To unzoom, just use the same key again.</p>
+
+<h2>Closing panes</h2>
+
+<p>Just like for windows, there&#39;s a command to close a pane:</p>
+
+<pre><code>  PREFIX + x
+</code></pre>
 
       </section>
     </div>

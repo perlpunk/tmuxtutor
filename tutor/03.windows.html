@@ -28,7 +28,9 @@
 
     <div class="container">
       <section id="main_content">
-<h1>Working with windows</h1>
+<h1 class="title">tmuxtutor.windows</h1>
+
+<p>Working with windows</p>
 
 <p>You are in window 0 right now. To go to this window from anywhere, type</p>
 
@@ -58,6 +60,13 @@
 
 <p>where n is the window number.</p>
 
+<p>Another possibility is to be prompted for the number:</p>
+
+<pre><code>  PREFIX + &#39; (single quote)
+</code></pre>
+
+<p>lets you type in a number, so this is especially useful for windows with an index greater than 9.</p>
+
 <p>You can also navigate to the last recently used window with</p>
 
 <pre><code>  PREFIX + l
@@ -79,10 +88,26 @@
 
 <p>You can give a title to a window with:</p>
 
-<pre><code>  PREFIX + ,
+<pre><code>  PREFIX + , (comma)
 </code></pre>
 
 <p>You can see the window titles in the status bar.</p>
+
+<p>If you want to move the window to another position, type:</p>
+
+<pre><code>  PREFIX + . (dot)
+</code></pre>
+
+<p>You can now enter the new position. Note that the new window index must be free (not used by a window).</p>
+
+<h2>Closing windows</h2>
+
+<p>Typing exit or <code>CTRL-d</code> will close a shell and the window, but there&#39;s also a command:</p>
+
+<pre><code>  PREFIX + &amp;
+</code></pre>
+
+<p>It asks for confirmation.</p>
 
       </section>
     </div>
