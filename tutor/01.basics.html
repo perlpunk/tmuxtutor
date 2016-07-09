@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/print.css" media="print">
+
+    <title>basics | tmuxtutor</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1><a href="/tmuxtutor/">tmuxtutor</a> / basics</h1>
+        <h2>A brief tmux tutorial inspired by vimtutor</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/perlpunk/tmuxtutor/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/perlpunk/tmuxtutor/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/perlpunk/tmuxtutor" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+<h1>Welcome to tmuxtutor!</h1>
+
+<h2>Prefix key</h2>
+
+<p>For every command in tmux you have to type a PREFIX. By default, this is</p>
+
+<pre><code>  CTRL-b
+</code></pre>
+
+<h2>Basic commands</h2>
+
+<p>Let&#39;s try our first command.</p>
+
+<p>To show the current time, type</p>
+
+<pre><code>  PREFIX + t
+</code></pre>
+
+<p>To get back from the time display (or from any dialogue), type</p>
+
+<pre><code>  q
+</code></pre>
+
+<p>You can also type ESC</p>
+
+<p>To get a list of all keys that are bound to a command, type</p>
+
+<pre><code>  PREFIX + ?
+</code></pre>
+
+<p>Every key is listed with the exact command it is bound to. All available commands are listed in the man page.</p>
+
+<p>To close this or other tutorials, just type</p>
+
+<pre><code>  q
+</code></pre>
+
+<p>which will end the <code>less</code> <strong>and</strong> close the window.</p>
+
+<h2>Sessions</h2>
+
+<p>tmux has sessions. A session can have several windows, and a window can have several panes.</p>
+
+<p>This tutorial is started as a session called &quot;demo&quot; which you should be able to see in the status bar at the bottom.</p>
+
+<p>You can detach a session by typing</p>
+
+<pre><code>  PREFIX + d
+</code></pre>
+
+<p>You will be back in the shell where you started the session.</p>
+
+<p>To reattach to this session, type</p>
+
+<pre><code>  tmux attach -t demo
+</code></pre>
+
+<p>If there is only one session, you can omit the -t option.</p>
+
+<pre><code>  tmux ls
+  tmux list-sessions
+</code></pre>
+
+<p>will list all your tmux sessions.</p>
+
+      </section>
+    </div>
+
+  </body>
+</html>

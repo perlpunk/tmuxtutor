@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="../stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/print.css" media="print">
+
+    <title>panes | tmuxtutor</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1><a href="/tmuxtutor/">tmuxtutor</a> / panes</h1>
+        <h2>A brief tmux tutorial inspired by vimtutor</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/perlpunk/tmuxtutor/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/perlpunk/tmuxtutor/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/perlpunk/tmuxtutor" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+<h1>Working with panes</h1>
+
+<p>Windows are nice, but often you want to see several windows at the same time; for viewing log files, showing the output of your test suite, manage your git commits etc.</p>
+
+<p>For that, tmux has panes inside of windows.</p>
+
+<p>Splitting a window into two panes is easy. To split vertical, type</p>
+
+<pre><code>  PREFIX + %
+</code></pre>
+
+<p>To split horizontally, use</p>
+
+<pre><code>  PREFIX + &quot;
+</code></pre>
+
+<p>So now create a new pane by PREFIX + %. The new pane is automatically focused.</p>
+
+<p>To navigate, you can use the arrow keys. So to go back to this pane, type</p>
+
+<pre><code>  PREFIX + Left
+</code></pre>
+
+<p>To quickly navigate between two panes, use</p>
+
+<pre><code>  PREFIX + ;
+</code></pre>
+
+<p>Remember: Last window: PREFIX + l</p>
+
+<pre><code>        Last pane:   PREFIX + ;
+</code></pre>
+
+<p>To go to the next pane, type</p>
+
+<pre><code>  PREFIX + o
+</code></pre>
+
+<p>Remember you can always type</p>
+
+<pre><code>  PREFIX + ?
+</code></pre>
+
+<p>to get a list of all keys.</p>
+
+<br/>
+
+<p>To see all pane numbers, type</p>
+
+<pre><code>  PREFIX + q
+</code></pre>
+
+<p>You will see a number displayed in every pane for two seconds.</p>
+
+<h2>Move panes around</h2>
+
+<p>Two swap a pane with the previous/next one, type</p>
+
+<pre><code>  PREFIX + &#123;
+  PREFIX + &#125;
+</code></pre>
+
+<h2>Zooming panes</h2>
+
+<p>Now, let&#39;s say you have two vertical panes, so they have only half of the size of your terminal. This can sometimes be problematic.</p>
+
+<p>You&#39;ll notice that you cannot copy content from just one pane. When you cannot use the tmux copy &amp; paste, you want to be able to select content like you do in your normal terminal.</p>
+
+<p>Or wou want to show a side-by-side diff with vimdiff and just need more space.</p>
+
+<p>There is a shortcut for temporarily zoom in/out a pane with</p>
+
+<pre><code>  PREFIX + z
+</code></pre>
+
+<p>Try it with this one here. To unzoom, just use the same key again.</p>
+
+      </section>
+    </div>
+
+  </body>
+</html>
