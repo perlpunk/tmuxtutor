@@ -9,3 +9,11 @@ htmlpages:
 		echo $$i; \
 		swim --to html "txt/$$i.txt" > "html/$$i.html"; \
 	done
+ghpages: htmlpages
+	perl bin/generate-pages.pl && \
+	git co gh-pages && \
+	cp out-html/*.html tutor/ && \
+	git add tutor && \
+	git commit  --amend --no-edit && \
+	git checkout master
+
