@@ -27,6 +27,13 @@ type
 
 where n is the window number.
 
+Another possibility is to be prompted for the number:
+
+    PREFIX + '
+
+lets you type in a number, so this is especially useful for windows
+with an index greater than 9.
+
 You can also navigate to the last recently used window with
 
     PREFIX + l
@@ -49,3 +56,9 @@ You can give a title to a window with:
     PREFIX + ,
 
 You can see the window titles in the status bar.
+
+If you want to move the window to another position, type:
+
+    PREFIX + .
+
+You can now enter the new position.

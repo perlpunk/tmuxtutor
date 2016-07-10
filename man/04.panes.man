@@ -70,8 +70,8 @@
 .rr rF
 .\" ========================================================================
 .\"
-.IX Title "IO::FILE=IO(0X2545328) 1"
-.TH IO::FILE=IO(0X2545328) 1 "2016-07-10" "perl v5.20.2" "User Contributed Perl Documentation"
+.IX Title "IO::FILE=IO(0X675328) 1"
+.TH IO::FILE=IO(0X675328) 1 "2016-07-10" "perl v5.20.2" "User Contributed Perl Documentation"
 .\" For nroff, turn off justification.  Always turn off hyphenation; it makes
 .\" way too many mistakes in technical documents.
 .if n .ad l
@@ -129,13 +129,13 @@ Remember you can always type
 .PP
 to get a list of all keys.
 .PP
-To see all pane numbers, type
+To see all pane numbers, and to navigate to a pane, type
 .PP
 .Vb 1
 \&      PREFIX + q
 .Ve
 .PP
-You will see a number displayed in every pane for two seconds.
+You will see a number displayed in every pane for two seconds. The active one is displayed in red. You can then type in the number to navigate to that pane.
 .SS "Move panes around"
 .IX Subsection "Move panes around"
 Two swap a pane with the previous/next one, type

@@ -70,8 +70,8 @@
 .rr rF
 .\" ========================================================================
 .\"
-.IX Title "IO::FILE=IO(0X2492328) 1"
-.TH IO::FILE=IO(0X2492328) 1 "2016-07-10" "perl v5.20.2" "User Contributed Perl Documentation"
+.IX Title "IO::FILE=IO(0X1692328) 1"
+.TH IO::FILE=IO(0X1692328) 1 "2016-07-10" "perl v5.20.2" "User Contributed Perl Documentation"
 .\" For nroff, turn off justification.  Always turn off hyphenation; it makes
 .\" way too many mistakes in technical documents.
 .if n .ad l
@@ -109,6 +109,14 @@ Windows with numbers 0\-9 are a bit easier to access. Just type
 .PP
 where n is the window number.
 .PP
+Another possibility is to be prompted for the number:
+.PP
+.Vb 1
+\&      PREFIX + \*(Aq
+.Ve
+.PP
+lets you type in a number, so this is especially useful for windows with an index greater than 9.
+.PP
 You can also navigate to the last recently used window with
 .PP
 .Vb 1
@@ -137,3 +145,11 @@ You can give a title to a window with:
 .Ve
 .PP
 You can see the window titles in the status bar.
+.PP
+If you want to move the window to another position, type:
+.PP
+.Vb 1
+\&      PREFIX + .
+.Ve
+.PP
+You can now enter the new position.
