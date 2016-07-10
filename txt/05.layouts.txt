@@ -1,0 +1,52 @@
+= Pane layout
+
+Here's a way to quickly change the pane layout without manually
+resizing.
+
+tmux offers five main layouts. You can use them with any number of panes,
+but to demonstrate, let's use three.
+
+Open a new pane on the right with
+
+    PREFIX + %
+
+Split that new pane vertically with
+
+    PREFIX + "
+
+The first layout is `even-horizontal`. Type
+
+    PREFIX + Meta-1
+
+Your three panes should now all be side by side splitted horizontally.
+
+Layout `even-vertical`:
+
+    PREFIX + Meta-2
+
+Panes should appear splitted vertically.
+
+Layout `main-horizontal`:
+
+    PREFIX + Meta-3
+
+The main pane will appear on top, with more than half of the window, and
+the two other panes are below splitted horizontally.
+
+Layout `main-vertical`:
+
+    PREFIX + Meta-4
+
+The main pane is now on the left, and the other two panes are on the
+right splitted vertically.
+
+Layout `tiled`:
+
+    PREFIX + Meta-5
+
+You can also just loop trough the different layouts with
+
+    PREFIX + Space
+
+Try to recall the commands for navigating panes, add more panes and
+play with the layouts.

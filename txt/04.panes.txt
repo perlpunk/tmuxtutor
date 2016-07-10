@@ -27,8 +27,10 @@ To quickly navigate between two panes, use
 
     PREFIX + ;
 
-Remember: Last window: PREFIX + l
-          Last pane:   PREFIX + ;
+Remember:
+
+    Last window: PREFIX + l
+    Last pane:   PREFIX + ;
 
 To go to the next pane, type
 
