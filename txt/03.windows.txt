@@ -1,4 +1,7 @@
-= Working with windows
+tmuxtutor.windows
+==========
+
+Working with windows
 
 You are in window 0 right now. To go to this window from
 anywhere, type

@@ -1,4 +1,7 @@
-= Pane layout
+tmuxtutor.layouts
+==========
+
+Pane layout
 
 Here's a way to quickly change the pane layout without manually
 resizing.

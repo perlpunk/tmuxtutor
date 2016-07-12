@@ -1,4 +1,7 @@
-= Working with panes
+tmuxtutor.panes
+========
+
+Working with panes
 
 Windows are nice, but often you want to see several windows
 at the same time; for viewing log files, showing the output of

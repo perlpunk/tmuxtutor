@@ -1,4 +1,7 @@
-= Welcome to tmuxtutor!
+tmuxtutor.basics
+=========
+
+Welcome to tmuxtutor!
 
 == Prefix key
 
