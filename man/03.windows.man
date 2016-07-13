@@ -155,3 +155,12 @@ If you want to move the window to another position, type:
 .Ve
 .PP
 You can now enter the new position.
+.SS "Closing windows"
+.IX Subsection "Closing windows"
+Typing exit or \f(CW\*(C`CTRL\-d\*(C'\fR will close a shell and the window, but there's also a command:
+.PP
+.Vb 1
+\&      PREFIX + &
+.Ve
+.PP
+It asks for confirmation.

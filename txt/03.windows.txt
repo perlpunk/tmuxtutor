@@ -65,3 +65,12 @@ If you want to move the window to another position, type:
     PREFIX + .
 
 You can now enter the new position.
+
+== Closing windows
+
+Typing exit or `CTRL-d` will close a shell and the window, but there's also
+a command:
+
+    PREFIX + &
+
+It asks for confirmation.

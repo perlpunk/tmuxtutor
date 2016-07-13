@@ -17,11 +17,16 @@ To show the current time, type
 
     PREFIX + t
 
+That is, type the PREFIX and then `t`. But it also works if typed all at
+the same time.
+
 To get back from the time display (or from any dialogue), type
 
     q
 
-You can also type ESC
+or
+
+    ESCAPE
 
 To get a list of all keys that are bound to a command, type
 

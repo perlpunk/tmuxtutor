@@ -78,3 +78,9 @@ There is a shortcut for temporarily zoom in/out a pane with
     PREFIX + z
 
 Try it with this one here. To unzoom, just use the same key again.
+
+== Closing panes
+
+Just like for windows, there's a command to close a pane:
+
+    PREFIX + x

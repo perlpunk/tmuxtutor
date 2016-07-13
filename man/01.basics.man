@@ -96,13 +96,19 @@ To show the current time, type
 \&      PREFIX + t
 .Ve
 .PP
+That is, type the \s-1PREFIX\s0 and then \f(CW\*(C`t\*(C'\fR. But it also works if typed all at the same time.
+.PP
 To get back from the time display (or from any dialogue), type
 .PP
 .Vb 1
 \&      q
 .Ve
 .PP
-You can also type \s-1ESC\s0
+or
+.PP
+.Vb 1
+\&      ESCAPE
+.Ve
 .PP
 To get a list of all keys that are bound to a command, type
 .PP
