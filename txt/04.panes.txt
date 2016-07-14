@@ -10,15 +10,15 @@ your test suite, manage your git commits etc.
 For that, tmux has panes inside of windows.
 
 Splitting a window into two panes is easy. To split
-vertical, type
+vertically, type
 
     PREFIX + %
 
 To split horizontally, use
 
-    PREFIX + "
+    PREFIX + " (double quote)
 
-So now create a new pane by PREFIX + %. The new pane is
+So now create a new pane by `PREFIX + %`. The new pane is
 automatically focused.
 
 To navigate, you can use the arrow keys. So to go back to
@@ -56,7 +56,7 @@ You can then type in the number to navigate to that pane.
 
 == Move panes around
 
-Two swap a pane with the previous/next one, type
+To swap a pane with the previous/next one, type
 
     PREFIX + {
     PREFIX + }
@@ -70,10 +70,10 @@ You'll notice that you cannot copy content from just one pane.
 When you cannot use the tmux copy & paste, you want to be able
 to select content like you do in your normal terminal.
 
-Or wou want to show a side-by-side diff with vimdiff and just
+Or wou want to show a side by side diff with vimdiff and just
 need more space.
 
-There is a shortcut for temporarily zoom in/out a pane with
+There is a shortcut for temporarily zooming into/out of a pane with
 
     PREFIX + z
 

@@ -114,7 +114,7 @@ where n is the window number.
 Another possibility is to be prompted for the number:
 .PP
 .Vb 1
-\&      PREFIX + \*(Aq
+\&      PREFIX + \*(Aq (single quote)
 .Ve
 .PP
 lets you type in a number, so this is especially useful for windows with an index greater than 9.
@@ -143,7 +143,7 @@ or previous window
 You can give a title to a window with:
 .PP
 .Vb 1
-\&      PREFIX + ,
+\&      PREFIX + , (comma)
 .Ve
 .PP
 You can see the window titles in the status bar.
@@ -151,10 +151,10 @@ You can see the window titles in the status bar.
 If you want to move the window to another position, type:
 .PP
 .Vb 1
-\&      PREFIX + .
+\&      PREFIX + . (dot)
 .Ve
 .PP
-You can now enter the new position.
+You can now enter the new position. Note that the new window index must be free (not used by a window).
 .SS "Closing windows"
 .IX Subsection "Closing windows"
 Typing exit or \f(CW\*(C`CTRL\-d\*(C'\fR will close a shell and the window, but there's also a command:

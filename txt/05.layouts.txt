@@ -15,33 +15,33 @@ Open a new pane on the right with
 
 Split that new pane vertically with
 
-    PREFIX + "
+    PREFIX + " (double quote)
 
 The first layout is `even-horizontal`. Type
 
     PREFIX + Meta-1
 
-Your three panes should now all be side by side splitted horizontally.
+Your three panes should now all be side by side split horizontally.
 
 Layout `even-vertical`:
 
     PREFIX + Meta-2
 
-Panes should appear splitted vertically.
+Panes should appear split vertically.
 
 Layout `main-horizontal`:
 
     PREFIX + Meta-3
 
 The main pane will appear on top, with more than half of the window, and
-the two other panes are below splitted horizontally.
+the two other panes are below split horizontally.
 
 Layout `main-vertical`:
 
     PREFIX + Meta-4
 
 The main pane is now on the left, and the other two panes are on the
-right splitted vertically.
+right split vertically.
 
 Layout `tiled`:
 

@@ -9,9 +9,23 @@ For every command in tmux you have to type a PREFIX. By default, this
 is
     CTRL-b
 
+Before we start: To get back from a tmux dialogue or display, you
+can use
+
+    q
+
+or
+
+    ESCAPE
+
+Sometimes you get error messages, and they will only be displayed for
+a second. To see the last error messages, type
+
+    PREFIX + ~ (tilde)
+
 == Basic commands
 
-Let's try our first command.
+Ok, let's try our first command.
 
 To show the current time, type
 
@@ -19,14 +33,6 @@ To show the current time, type
 
 That is, type the PREFIX and then `t`. But it also works if typed all at
 the same time.
-
-To get back from the time display (or from any dialogue), type
-
-    q
-
-or
-
-    ESCAPE
 
 To get a list of all keys that are bound to a command, type
 

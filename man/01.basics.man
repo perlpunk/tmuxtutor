@@ -86,19 +86,8 @@ For every command in tmux you have to type a \s-1PREFIX.\s0 By default, this is
 .Vb 1
 \&      CTRL\-b
 .Ve
-.SS "Basic commands"
-.IX Subsection "Basic commands"
-Let's try our first command.
 .PP
-To show the current time, type
-.PP
-.Vb 1
-\&      PREFIX + t
-.Ve
-.PP
-That is, type the \s-1PREFIX\s0 and then \f(CW\*(C`t\*(C'\fR. But it also works if typed all at the same time.
-.PP
-To get back from the time display (or from any dialogue), type
+Before we start: To get back from a tmux dialogue or display, you can use
 .PP
 .Vb 1
 \&      q
@@ -109,6 +98,23 @@ or
 .Vb 1
 \&      ESCAPE
 .Ve
+.PP
+Sometimes you get error messages, and they will only be displayed for a second. To see the last error messages, type
+.PP
+.Vb 1
+\&      PREFIX + ~ (tilde)
+.Ve
+.SS "Basic commands"
+.IX Subsection "Basic commands"
+Ok, let's try our first command.
+.PP
+To show the current time, type
+.PP
+.Vb 1
+\&      PREFIX + t
+.Ve
+.PP
+That is, type the \s-1PREFIX\s0 and then \f(CW\*(C`t\*(C'\fR. But it also works if typed all at the same time.
 .PP
 To get a list of all keys that are bound to a command, type
 .PP

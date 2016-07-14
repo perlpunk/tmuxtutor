@@ -32,7 +32,7 @@ where n is the window number.
 
 Another possibility is to be prompted for the number:
 
-    PREFIX + '
+    PREFIX + ' (single quote)
 
 lets you type in a number, so this is especially useful for windows
 with an index greater than 9.
@@ -56,15 +56,16 @@ or previous window
 
 You can give a title to a window with:
 
-    PREFIX + ,
+    PREFIX + , (comma)
 
 You can see the window titles in the status bar.
 
 If you want to move the window to another position, type:
 
-    PREFIX + .
+    PREFIX + . (dot)
 
-You can now enter the new position.
+You can now enter the new position. Note that the new window index must be
+free (not used by a window).
 
 == Closing windows
 

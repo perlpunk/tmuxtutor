@@ -84,7 +84,7 @@ Windows are nice, but often you want to see several windows at the same time; fo
 .PP
 For that, tmux has panes inside of windows.
 .PP
-Splitting a window into two panes is easy. To split vertical, type
+Splitting a window into two panes is easy. To split vertically, type
 .PP
 .Vb 1
 \&      PREFIX + %
@@ -93,10 +93,10 @@ Splitting a window into two panes is easy. To split vertical, type
 To split horizontally, use
 .PP
 .Vb 1
-\&      PREFIX + "
+\&      PREFIX + " (double quote)
 .Ve
 .PP
-So now create a new pane by \s-1PREFIX +\s0 %. The new pane is automatically focused.
+So now create a new pane by \f(CW\*(C`PREFIX + %\*(C'\fR. The new pane is automatically focused.
 .PP
 To navigate, you can use the arrow keys. So to go back to this pane, type
 .PP
@@ -140,7 +140,7 @@ To see all pane numbers, and to navigate to a pane, type
 You will see a number displayed in every pane for two seconds. The active one is displayed in red. You can then type in the number to navigate to that pane.
 .SS "Move panes around"
 .IX Subsection "Move panes around"
-Two swap a pane with the previous/next one, type
+To swap a pane with the previous/next one, type
 .PP
 .Vb 2
 \&      PREFIX + {
@@ -152,9 +152,9 @@ Now, let's say you have two vertical panes, so they have only half of the size o
 .PP
 You'll notice that you cannot copy content from just one pane. When you cannot use the tmux copy & paste, you want to be able to select content like you do in your normal terminal.
 .PP
-Or wou want to show a side-by-side diff with vimdiff and just need more space.
+Or wou want to show a side by side diff with vimdiff and just need more space.
 .PP
-There is a shortcut for temporarily zoom in/out a pane with
+There is a shortcut for temporarily zooming into/out of a pane with
 .PP
 .Vb 1
 \&      PREFIX + z
