@@ -79,6 +79,36 @@
 
 <p>which will end the <code>less</code> <strong>and</strong> close the window.</p>
 
+<h2>Command line</h2>
+
+<p>The most used commands are mapped to keys, but sometimes you need to call other commands or commands with other options.</p>
+
+<p>The <code>t</code> key is mapped to the <code>clock-mode</code> command, and you can call that manually with the command prefix <code>:</code>. Let&#39;s try it:</p>
+
+<pre><code>  PREFIX + :clock-mode + Enter
+</code></pre>
+
+<p>tmux supports tab completion; unfortunately it doesn&#39;t show you all possibilities, so you have to type until it&#39;s unambiguous:</p>
+
+<pre><code>  :clo&lt;TAB&gt;
+</code></pre>
+
+<p>Another possibility is to type the command into your shell:</p>
+
+<pre><code>  % tmux clock-mode
+</code></pre>
+
+<p>This will enter the clock mode in your tmux session. If typed from within a session, it will do this right were you are. If you type this from another shell not running tmux, it will choose the most recent used tmux session, window and pane for the command. Try it out!</p>
+
+<p>You can also specify a target session:window:pane with <code>-t</code>.</p>
+
+<pre><code>  % tmux clock-mode -t play:0:1 # session &#39;play&#39;, window 0, pane 1
+</code></pre>
+
+<p>The tab completion for this (<code>tmux &lt;command&gt;</code> and <code>tmux command -t &lt;target&gt;</code>) in zsh is really advanced.</p>
+
+<br/>
+
 <h2>Sessions</h2>
 
 <p>tmux has sessions. A session can have several windows, and a window can have several panes.</p>
