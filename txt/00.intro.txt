@@ -1,0 +1,42 @@
+tmuxtutor.intro
+===============
+
+Welcome to tmuxtutor!
+
+== Requirements
+
+* Install tmux
+* You should know how to navigate in a man page/less command
+* You should know what the Meta (or Alt) keys is
+
+== Usage
+
+This tutorial is intended to be viewed interactively. The HTML version is
+available here: https://perlpunk.github.io/tmuxtutor/
+
+Most of these tutorials are started with a command like this:
+
+    tmux new-session -s demo "man man/01.basics.man"
+
+So it will start a new tmux session called "demo" and the command man
+`man/01.basics.man`. This means if you leave the man command with `q` this
+will close the tmux window, and (if you haven't opened more windows)
+also the session.
+
+If you want to try out things in an extra session, simply start your own.
+It's a good habit to start every session with a name.
+
+    tmux new-session -t play
+
+== tmux configuration ~/.tmux.conf
+
+This tutorial assumes you haven't created a tmux configuration yet.
+If you have, then some things might work and look differently than with
+the default setup.
+
+== Start
+
+Now exit this intro with `q` and run
+
+    ./01.basics.sh
+
