@@ -17,6 +17,7 @@ sub man {
     my @txt_files = io('txt')->all_files;
 
     for my $file (@txt_files) {
+        next unless $file =~ m/\.txt$/;
         my $src = $file;
         $file =~ s/\.txt$//;
         $file =~ s{^txt/}{};
@@ -30,6 +31,7 @@ sub html {
     my @txt_files = io('txt')->all_files;
 
     for my $file (@txt_files) {
+        next unless $file =~ m/\.txt$/;
         my $src = $file;
         $file =~ s/\.txt$//;
         $file =~ s{^txt/}{};
