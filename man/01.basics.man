@@ -131,6 +131,37 @@ To close this or other tutorials, just type
 .Ve
 .PP
 which will end the \f(CW\*(C`less\*(C'\fR \fBand\fR close the window.
+.SS "Command line"
+.IX Subsection "Command line"
+The most used commands are mapped to keys, but sometimes you need to call other commands or commands with other options.
+.PP
+The \f(CW\*(C`t\*(C'\fR key is mapped to the \f(CW\*(C`clock\-mode\*(C'\fR command, and you can call that manually with the command prefix \f(CW\*(C`:\*(C'\fR. Let's try it:
+.PP
+.Vb 1
+\&      PREFIX + :clock\-mode + Enter
+.Ve
+.PP
+tmux supports tab completion; unfortunately it doesn't show you all possibilities, so you have to type until it's unambiguous:
+.PP
+.Vb 1
+\&      :clo<TAB>
+.Ve
+.PP
+Another possibility is to type the command into your shell:
+.PP
+.Vb 1
+\&      % tmux clock\-mode
+.Ve
+.PP
+This will enter the clock mode in your tmux session. If typed from within a session, it will do this right were you are. If you type this from another shell not running tmux, it will choose the most recent used tmux session, window and pane for the command. Try it out!
+.PP
+You can also specify a target session\fIwindow\fRpane with \f(CW\*(C`\-t\*(C'\fR.
+.PP
+.Vb 1
+\&      % tmux clock\-mode \-t play:0:1 # session \*(Aqplay\*(Aq, window 0, pane 1
+.Ve
+.PP
+The tab completion for this (\f(CW\*(C`tmux <command>\*(C'\fR and \f(CW\*(C`tmux command \-t <target>\*(C'\fR) in zsh is really advanced.
 .SS "Sessions"
 .IX Subsection "Sessions"
 tmux has sessions. A session can have several windows, and a window can have several panes.

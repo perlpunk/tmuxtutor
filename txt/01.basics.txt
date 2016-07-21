@@ -47,6 +47,38 @@ To close this or other tutorials, just type
 
 which will end the `less` *and* close the window.
 
+== Command line
+
+The most used commands are mapped to keys, but sometimes you need to
+call other commands or commands with other options.
+
+The `t` key is mapped to the `clock-mode` command, and you can call
+that manually with the command prefix `:`. Let's try it:
+
+    PREFIX + :clock-mode + Enter
+
+tmux supports tab completion; unfortunately it doesn't show you all
+possibilities, so you have to type until it's unambiguous:
+
+    :clo<TAB>
+
+Another possibility is to type the command into your shell:
+
+    % tmux clock-mode
+
+This will enter the clock mode in your tmux session. If typed from
+within a session, it will do this right were you are. If you type
+this from another shell not running tmux, it will choose the most
+recent used tmux session, window and pane for the command. Try it out!
+
+You can also specify a target session/window/pane with `-t`.
+
+    % tmux clock-mode -t play:0:1 # session 'play', window 0, pane 1
+
+The tab completion for this (`tmux <command>` and `tmux command -t <target>`)
+in zsh is really advanced.
+
+
 == Sessions
 
 tmux has sessions. A session can have several windows, and

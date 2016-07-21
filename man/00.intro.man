@@ -111,6 +111,10 @@ This tutorial assumes you haven't created a tmux configuration yet. If you have,
 .IX Subsection "Start"
 Now exit this intro with \f(CW\*(C`q\*(C'\fR and run
 .PP
-.Vb 1
+.Vb 5
 \&      ./01.basics.sh
+\&      ./02.prefix.sh
+\&      ./03.windows.sh
+\&      ./04.panes.sh
+\&      ./05.layouts.sh
 .Ve

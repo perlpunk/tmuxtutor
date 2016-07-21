@@ -138,6 +138,21 @@ or previous window
 .Vb 1
 \&      PREFIX + p
 .Ve
+.PP
+If you want to move the window to another position, type:
+.PP
+.Vb 1
+\&      PREFIX + . (dot)
+.Ve
+.PP
+You can now enter the new position. Note that the new window index must be free (not used by a window).
+.PP
+You can swap two windows with the command
+.PP
+.Vb 2
+\&      PREFIX + :swap\-window \-t \-1
+\&      PREFIX + :swap\-window \-t +1
+.Ve
 .SS "Window titles"
 .IX Subsection "Window titles"
 You can give a title to a window with:
@@ -148,13 +163,21 @@ You can give a title to a window with:
 .PP
 You can see the window titles in the status bar.
 .PP
-If you want to move the window to another position, type:
+If you don't give a title, it will be automatically set to the name of the process, usually your shell.
+.PP
+Open a new window with
 .PP
 .Vb 1
-\&      PREFIX + . (dot)
+\&      PREFIX + c
 .Ve
 .PP
-You can now enter the new position. Note that the new window index must be free (not used by a window).
+The title will be your shell (e.g. bash, zsh, ...). Now type:
+.PP
+.Vb 1
+\&      sleep 5
+.Ve
+.PP
+You'll see the title changes to \f(CW\*(C`sleep\*(C'\fR, and when the process finishes, it will be renamed back. This can be very handy if you run a long process in another window \- you'll be able to see when it finishes. You can also configure to be notified about that in the status line,
 .SS "Closing windows"
 .IX Subsection "Closing windows"
 Typing exit or \f(CW\*(C`CTRL\-d\*(C'\fR will close a shell and the window, but there's also a command:
