@@ -1,7 +1,7 @@
 tmuxtutor.windows
 ==========
 
-Working with windows
+== Working with windows
 
 You are in window 0 right now. To go to this window from
 anywhere, type
@@ -13,7 +13,7 @@ Let's open a a new window with
     PREFIX + c
 
 You will be in that new window number 1 now and see an additional
-entry in the status bar at the bottom.
+entry in the status bar at the bottom. Go back with `PREFIX + 0`.
 
 == Navigating windows
 
@@ -21,7 +21,8 @@ You can interactively choose any window by typing
 
     PREFIX + w
 
-This will give you a list of windows in your session.
+This will give you a list of windows in your session. You should see
+two entries at this point.
 
 Windows with numbers 0-9 are a bit easier to access. Just
 type
@@ -51,6 +52,8 @@ Go to the next
 or previous window
 
     PREFIX + p
+
+== Window positions
 
 If you want to move the window to another position, type:
 
@@ -86,7 +89,18 @@ The title will be your shell (e.g. bash, zsh, ...). Now type:
 You'll see the title changes to `sleep`, and when the process finishes,
 it will be renamed back. This can be very handy if you run a long process
 in another window - you'll be able to see when it finishes. You can also
-configure to be notified about that in the status line,
+configure to be notified about that in the status line. Type:
+
+    PREFIX + :set -g monitor-activity on
+
+To try this out, go to window number 1 where you ran the sleep, type
+`sleep 10`, go back to window number 0 and wait. When the sleep finishes,
+the window 1 in the status bar should be highlighted.
+
+    PREFIX + 1 (window 1)
+    % sleep 10
+    PREFIX + 0
+    # wait
 
 == Closing windows
 

@@ -1,6 +1,6 @@
 <h1 class="title">tmuxtutor.windows</h1>
 
-<p>Working with windows</p>
+<p>== Working with windows</p>
 
 <p>You are in window 0 right now. To go to this window from anywhere, type</p>
 
@@ -12,7 +12,7 @@
 <pre><code>  PREFIX + c
 </code></pre>
 
-<p>You will be in that new window number 1 now and see an additional entry in the status bar at the bottom.</p>
+<p>You will be in that new window number 1 now and see an additional entry in the status bar at the bottom. Go back with <code>PREFIX + 0</code>.</p>
 
 <h2>Navigating windows</h2>
 
@@ -21,7 +21,7 @@
 <pre><code>  PREFIX + w
 </code></pre>
 
-<p>This will give you a list of windows in your session.</p>
+<p>This will give you a list of windows in your session. You should see two entries at this point.</p>
 
 <p>Windows with numbers 0-9 are a bit easier to access. Just type</p>
 
@@ -53,6 +53,8 @@
 
 <pre><code>  PREFIX + p
 </code></pre>
+
+<h2>Window positions</h2>
 
 <p>If you want to move the window to another position, type:</p>
 
@@ -88,7 +90,18 @@
 <pre><code>  sleep 5
 </code></pre>
 
-<p>You&#39;ll see the title changes to <code>sleep</code>, and when the process finishes, it will be renamed back. This can be very handy if you run a long process in another window - you&#39;ll be able to see when it finishes. You can also configure to be notified about that in the status line,</p>
+<p>You&#39;ll see the title changes to <code>sleep</code>, and when the process finishes, it will be renamed back. This can be very handy if you run a long process in another window - you&#39;ll be able to see when it finishes. You can also configure to be notified about that in the status line. Type:</p>
+
+<pre><code>  PREFIX + :set -g monitor-activity on
+</code></pre>
+
+<p>To try this out, go to window number 1 where you ran the sleep, type <code>sleep 10</code>, go back to window number 0 and wait. When the sleep finishes, the window 1 in the status bar should be highlighted.</p>
+
+<pre><code>  PREFIX + 1 (window 1)
+  % sleep 10
+  PREFIX + 0
+  # wait
+</code></pre>
 
 <h2>Closing windows</h2>
 
