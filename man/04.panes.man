@@ -161,6 +161,22 @@ There is a shortcut for temporarily zooming into/out of a pane with
 .Ve
 .PP
 Try it with this one here. To unzoom, just use the same key again.
+.SS "Resizing Panes"
+.IX Subsection "Resizing Panes"
+You can resize a pane by typing
+.PP
+.Vb 10
+\&      # resize by 5 cells
+\&      PREFIX + Meta\-Left
+\&      PREFIX + Meta\-Right
+\&      PREFIX + Meta\-Up
+\&      PREFIX + Meta\-Down
+\&      # resize by 1 cell
+\&      PREFIX + Ctrl\-Left
+\&      PREFIX + Ctrl\-Right
+\&      PREFIX + Ctrl\-Up
+\&      PREFIX + Ctrl\-Down
+.Ve
 .SS "Closing panes"
 .IX Subsection "Closing panes"
 Just like for windows, there's a command to close a pane:
