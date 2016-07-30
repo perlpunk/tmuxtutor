@@ -1,0 +1,58 @@
+<h1 class="title">tmuxtutor.synchronize</h1>
+
+<p>Synchronizing panes means, that everything you type in one pane, will be typed into all other panes in the window.</p>
+
+<p>You could use this for ssh to a number of different hosts and run a command, compare the output, etc.</p>
+
+<p>Or to compare the outputs of a program for several versions of your language interpreter.</p>
+
+<br/>
+
+<br/>
+
+<p>To try out synchronising you either have to open a new tmux window or another terminal, so that you can still read this manpage.</p>
+
+<p>To open a new session in a new terminal, type</p>
+
+<pre><code>  tmux new-session -s sync
+</code></pre>
+
+<p>To open a new tmux window, type</p>
+
+<pre><code>  PREFIX + c
+</code></pre>
+
+<p>Now open 4 (or as many as you like) panes. In every new pane, type</p>
+
+<pre><code>  NAME=some.name
+  NAME=other.name
+  ...
+</code></pre>
+
+<p>Now activate synchronizing with</p>
+
+<pre><code>  PREFIX + :set synchronize-panes on
+</code></pre>
+
+<p>Then echo the variable:</p>
+
+<pre><code>  echo &quot;Hello $NAME!&quot;
+</code></pre>
+
+<p>To deactivate, type</p>
+
+<pre><code>  PREFIX + :set synchronize-panes off
+</code></pre>
+
+<p>Leaving out the &#39;on&#39; or &#39;off&#39; will toggle the option.</p>
+
+<pre><code>  PREFIX + :set synchronize-panes
+</code></pre>
+
+<p>If you do this more often, it might be a good idea to bind this to a key.</p>
+
+<h1>Scripting</h1>
+
+<p>Synchronizing is a good use case for scripting tmux.</p>
+
+<p>In <code>examples/06a.synchronize-perlbrew.sh</code> you will find a script that compares four perl versions with each other, via <code>perlbrew</code>. Maybe replace this with <code>plenv</code>, <code>rbenv</code> or any other interpreter switching tool and try it out.</p>
