@@ -73,7 +73,7 @@ recent used tmux session, window and pane for the command. Try it out!
 
 You can also specify a target session:window:pane with `-t`.
 
-    % tmux clock-mode -t play:0:1 # session 'play', window 0, pane 1
+    % tmux clock-mode -t play:0.1 # session 'play', window 0, pane 1
 
 The tab completion for this (`tmux <command>` and `tmux command -t <target>`)
 in zsh is really advanced.
